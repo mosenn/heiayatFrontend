@@ -195,6 +195,11 @@ footer .media h2 {
 .swiper {
   width: 100%;
   height: 100%;
+
+  padding: 20px !important;
+}
+.swiper-wrapper {
+  border: 1px solid blue !important;
 }
 .swiper-slide {
   width: 70%;
@@ -210,9 +215,14 @@ footer .media h2 {
   width: 30px !important;
   height: 10px !important;
   border-radius: 5px !important;
+  transform: translate(0, -20px);
 }
 .swiper-pagination-bullet-active {
-  background-color: rgb(218, 218, 224) !important; /* change the color here */
+  background-color: rgb(
+    218,
+    218,
+    224
+  ) !important; /* change the color here */
 }
 /* SWIPER */
 /* 
@@ -291,6 +301,16 @@ footer .media h2 {
     #000 100%
   );
   z-index: -1;
+}
+
+@media screen and (min-width: 992px) {
+  .swiper {
+    transform: translate(0, -76px);
+  }
+
+  .swiper-slide > img {
+    height: 450px !important;
+  }
 }
 
 @media (max-width: 640px) {
